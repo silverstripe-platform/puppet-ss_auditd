@@ -78,7 +78,12 @@
 ## Ignore EOE records (End Of Event, not needed)
 -a always,exclude -F msgtype=EOE
 
-## Cron jobs fill the logs with stuff we normally don't want (works with SELinux)
+## Cron jobs fill the logs with stuff we normally don't want (PAM and cron already log to syslog too)
+-a exclude,never -F msgtype=USER_ACCT
+-a exclude,never -F msgtype=CRED_ACQ
+-a exclude,never -F msgtype=USER_START
+-a exclude,never -F msgtype=CRED_DISP
+-a exclude,never -F msgtype=USER_END
 -a never,user -F subj_type=crond_t
 -a exit,never -F subj_type=crond_t
 
