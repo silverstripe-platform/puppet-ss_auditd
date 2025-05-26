@@ -4,8 +4,8 @@
   "author": "SilverStripe Ltd",
   "license": "BSD-3-Clause",
   "summary": "Puppet module for configure auditd",
-  "source": "https://github.com/silverstripeltd/puppet-ss_auditd",
-  "project_page": "https://github.com/silverstripeltd/puppet-ss_auditd",
+  "source": "https://github.com/silverstripe-platform/puppet-ss_auditd",
+  "project_page": "https://github.com/silverstripe-platform/puppet-ss_auditd",
   "dependencies": [],
   "requirements": [
     {
